@@ -58,6 +58,8 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
 async function connectToDB (res, method, body) {
     console.log ({method, body});
     try {
